@@ -6,18 +6,18 @@ async function sendMessage() {
   if (!userText) return;
 
   // Exibe no chat a mensagem do usuário
-  chatWindow.innerHTML += <div class="chat-message user">${userText}</div>;
+  chatWindow.innerHTML += `<div class="chat-message user">${userText}</div>`;
   chatWindow.scrollTop = chatWindow.scrollHeight;
 
   // 2) Envia ao backend e aguarda a resposta
   try {
-    const res = await fetch(${window.API_BASE_URL}/api/chat, {
+    const res = await fetch(`${window.API_BASE_URL}/api/chat,` {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ pergunta: userText })
     });
 
-    if (!res.ok) throw new Error(Erro ${res.status});
+    if (!res.ok) throw new Error(`Erro ${res.status}`);
     const json = await res.json();
 
     // 3) Exibe a resposta do bot
