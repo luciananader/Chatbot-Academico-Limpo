@@ -17,3 +17,5 @@ Criar uma interface amigável e funcional que permita a estudantes tirarem dúvi
 - script.js – lógica do chatbot (envio de mensagens, exibição no chat)
 - config.js – configuração da URL base da API
 
+[👉 Acesse o projeto aqui](https://luciananader.github.io/Chatbot-Academico-Limpo/)
+
