@@ -1,3 +1,3 @@
-const API_BASE_URL = "adiciona aqui a url gerada quando fez o deploy do backend";
+const API_BASE_URL = "https://even3-back-end.onrender.com";
 
 window.API_BASE_URL = API_BASE_URL;
